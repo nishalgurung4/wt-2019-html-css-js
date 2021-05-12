@@ -1,0 +1,32 @@
+<html>
+    <head><title>visibility and colors</title>
+        <script type="text/javascript" src="visibile.js">
+                
+        </script>
+    </head>
+    <body>
+        <form>
+            <div id="pic" style="position:relative;visibility:visible;">
+                <img src="../../4.webp" height="100px" width="800px" />
+            </div>
+            <p>
+                <input type="button" id="btn" value="hide" onclick="showhide(); " />
+            </p>
+        </form>
+           
+   <script type="text/javascript">
+	   	function showhide() {
+			var dom=document.getElementById("pic").style;
+			var b=document.getElementById("btn");
+			if (b.value=="hide") {
+			dom.visibility="hidden";
+			b.value="show";
+			}
+			else{
+			dom.visibility="visible";
+			b.value="hide";
+			}
+		}
+   </script> 
+    </body>
+</html>

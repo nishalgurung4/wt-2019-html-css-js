@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	/*
+	Two types of loop:
+	1) Entry Control (for loop, while loop) 
+			--- 1) initialization of loop variable (Run only once)
+				2) Condition check
+				3) if condition true/meet 
+					3.1) Inside body
+				4) If condition false
+					4.1) Jump outside loop (next to the step 6)
+				5) Updation of loop variable 
+				6) Goto step 2)
+	2) Exit Control (do..while loop)
+				--- 
+				1) initialization fo the loop variable (Run only once)
+				2) inside loop body
+				3) updation of loop variable
+				4) Check condition 
+					4.1) If true, go to step 2
+					4.2) If false, Goto step 5
+				5) Stop
+	 */
+	for(var i=0; i<5;i++) {
+	console.log(i);
+	}
+	var j = 0;
+	while (j<5) {
+		console.log(j);
+		j++;
+	}
+	var k = 0;
+	do {
+		console.log(k);
+		k++;
+	}while(k < 5);
+
+	var input = prompt("Do you want to continue?");
+	var choice = false;
+	if (input == "yes")
+	{
+		choice = true;
+	}
+	while(choice)
+	{
+		alert("hello");
+		input = prompt("Do you want to continue?");
+		choice = input == "yes" ? true : false;
+	}
+
+
+</script>
+</body>
+</html>

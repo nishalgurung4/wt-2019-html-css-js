@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Border</title>
+</head>
+<body>
+<button onclick="changeBorder(this, 'red')">Red Border</button>
+<button onclick="changeBorder(this, 'blue')">Blue Border</button>
+
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+<button onclick="hide(this)">Hide Me</button>
+
+
+<script type="text/javascript">
+	function changeBorder(el, color)
+	{
+		el.style.borderColor = color;
+
+	}
+
+	function hide(el)
+	{
+		el.style.visibility = "hidden";
+	}
+</script>
+</body>
+</html>

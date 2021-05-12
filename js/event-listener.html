@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listener</title>
+</head>
+<body>
+<button id="click-me">Click me</button>
+
+<button id="remove" onclick="removeEvent()">Remove Event </button>
+
+<input type="text" onkeyup="check(this)" placeholder="Enter your favorite Book" />
+
+<script type="text/javascript">
+	document.getElementById("click-me").addEventListener("click", display);
+
+	function display()
+	{
+		alert("hello");
+	}
+
+	// document.getElementById("remove").addEventListener("click", removeEvent);
+
+
+	function removeEvent()
+	{
+		document.getElementById("click-me").removeEventListener("click", display);
+
+	}
+
+	function check(el)
+	{
+		var value = el.value;
+		if (value == "nishal") {
+			alert("Winner");
+		}
+	}
+	
+</script>
+</body>
+</html>

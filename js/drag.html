@@ -1,0 +1,35 @@
+<html>
+    <head><title>Drag and Drop</title>
+    
+    </head>
+    <body>
+        <span style="position:absolute;top:100px;left:50px;background-color:grey;" onmousedown="grabber(event);">Roses</span>
+        <span style="position:absolute;top:100px;left:100px;background-color:grey;" onmousedown="grabber(event);">Ringer</span>
+        <span style="position:absolute;top:100px;left:150px;background-color:grey;" onmousedown="grabber(event);">Ringer</span>
+
+
+        <script type="text/javascript">
+        	var theElement;
+			function grabber(evt) {
+				console.log(evt);
+			    //set global variable for the element to be move
+			    theElement=evt.currentTarget;
+			    console.log(theElement);
+			    //register the event handler for moving and dropping the word
+			    document.addEventListener("mousemove", mover,true);
+			    document.addEventListener("mouseup",dropper,true);
+			}
+			function mover(event) {
+			    theElement.style.left=event.clientX+"px";
+			    theElement.style.top=event.clientY+"px";
+			}
+			function dropper(event) {
+			    document.removeEventListener("mouseup",dropper,true);
+			    document.removeEventListener("mousemove",mover,true);
+			    
+			    
+			    
+			}
+        </script>
+    </body>
+</html>

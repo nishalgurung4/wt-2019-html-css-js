@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obj</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var people = [
+					{
+						name: "Ishan Subedi",
+						age: 21,
+						address: "Pokhara",
+						phone: ["9806673423", "9807743234"]
+					},
+					{
+						name: "Bandana Mainali",
+						age: 21,
+						address: "Pokhara",
+						phone: []
+					}
+				];
+	var jsonPeople = JSON.stringify(people);
+	console.log(jsonPeople);
+	var p = JSON.parse(jsonPeople);
+	console.log(typeof p);
+	console.log(typeof people);
+	console.log(people[0].name);
+	console.log("Number of phone:"+people[0].phone.length);
+	console.log(people);
+</script>
+</body>
+</html>

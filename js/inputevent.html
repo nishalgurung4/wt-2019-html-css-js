@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input event</title>
+</head>
+<body>
+	<input type="text" id="name" /> <br />
+
+	<label>Name is:</label>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		document.getElementById("name").addEventListener("keyup", function () {
+			result = document.getElementById("name").value;
+			document.getElementById("result").textContent = result
+		})
+	</script>
+</body>
+</html>

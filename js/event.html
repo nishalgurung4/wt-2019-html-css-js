@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event</title>
+</head>
+<body>
+<button onclick="changeColor('red')">Click Me</button>
+<button onclick="changeColor('blue')">Mouse Over</button>
+<button onclick="hide()">Hide ME</button>
+
+<p id="pkr" class="result">Hi This is <span>Pokhara</span></p>
+
+<script type="text/javascript">
+	function changeColor(data)
+	{
+		//select element
+		/*
+		 1 document.getElementById()
+		 2 document.getElementsByClassName() ---> array
+		 3) document.getElementsByTagName() --- > array
+		 4) document.querySelector() --- -> first matched element
+		 5) document.querySelectorAll()  --> all element (array)
+		*/
+	
+		document.getElementById("pkr").style.color = data;
+		console.log(document.getElementById("pkr").style.borderColor);
+	}
+
+	function hide()
+	{
+		document.getElementById("pkr").style.display = "none";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var car = {
+		name: "BMW", 
+		color: "Red", 
+		price: 99999999, 
+		move: function () {
+			console.log("inside move method");
+		},
+		no_of_tyre: 4
+	};
+
+	console.log(car.name);
+	console.log(car.color);
+	console.log(car.price);
+	car.move();
+	console.log(car.no_of_tyre);
+	car.owner = "Arjun";
+	car.price = 100000099;
+	console.log(car);
+	var person = new Object();
+	console.log(typeof car);
+	console.log(typeof person);
+
+
+	
+</script>
+
+</body>
+</html>

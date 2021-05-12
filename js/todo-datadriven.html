@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+</head>
+<body>
+<h1>TODO LIST</h1>
+<input type="text" style="width:50%" id="todo" placeholder="Enter the name of the list" />
+
+<h3>Name of Lists</h3>
+<ul id="lists">
+
+</ul>
+
+
+<script type="text/javascript">
+	var todoLists = []; 
+
+	document.getElementById("todo").addEventListener("keyup", function (event) {
+		if (event.keyCode == 13) {
+			var todoEl = document.getElementById("todo")
+			var item = todoEl.value;
+			var list = {
+				name : item,
+				isComplete : false,
+			};
+			todoLists.push(list);
+			todoEl.value = "";
+			renderHTML();
+		}
+		
+	});
+
+	function renderHTML()
+	{
+		document.getElementById("lists").innerHTML = "";
+			todoLists.forEach(function (list) {
+			var checked = "";
+			if (list.isComplete) {
+				checked = "checked";
+			}	
+			document.getElementById("lists").innerHTML += `<li> <input type="checkbox" ${checked} /> ${list.name} </li>`;
+		})
+
+	}
+</script>
+</body>
+</html>

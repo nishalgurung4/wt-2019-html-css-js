@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Identifier : name of the variable, class, function, array, object
+	////Naming rule of identifier
+	/*
+		1) Can use alphanumeric (a-zA-z0-9) and $ and _ symbol
+		2) Must start with a-z / A-Z / $ / _
+		3) Case sensitive
+		4) CAn't use reserve word (statement)
+
+		snake_case
+		camelCase
+		UpperCamelCase
+		kebab-case
+	 */
+	/*
+	4 types of function
+	1) Parameter with Return type
+	2) Parameter without Return type
+	3) No Parameter with Return type
+	4) No Parameter without Return type
+	 */
+
+	//1. Parameter with Return type
+	function add(a, b = 0)
+	{
+		return a + b;
+	}
+	console.log(add(1, 5));
+	console.log(add(4, 4));
+	console.log(add(4));
+
+	//2. Parameter without Return type
+	function add1(a, b)
+	{
+		console.log(a + b);
+	}
+
+	add1(5, 5);
+
+	//3. No param with return type
+	function add2()
+	{
+		return 5 + 4;
+	}
+	console.log(add2());
+
+	//4. No Param without return type
+	function add3()
+	{
+		console.log(5+5);
+	}
+
+	add3();
+</script>
+</body>
+</html>

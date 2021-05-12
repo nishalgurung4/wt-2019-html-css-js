@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Form
+	</title>
+</head>
+<body>
+<form>
+	<!-- form-control --- kebab case
+		formControl --- lower camel case 
+		FormControl --- Upper camel case
+		form_control ---- snake case
+	 -->
+	<label for="name">Name</label>
+	<input type="text" placeholder="Enter your name" id="name" class="form-control element" />
+
+	<br />
+	<br />
+
+	<label for="email">Email</label>
+	<input type="email" placeholder="example@example.com" id="email" class="form-control"  />
+
+	<br />
+	<br />
+
+	<label for="">DOB</label>
+	<input type="date" />
+
+	<br />
+	<br />
+
+	<label for="country">Country</label>
+	<select id="country">
+		<option value="india">India</option>
+		<option value="nepal" selected>Nepal</option>
+		<option value="china">China</option>
+	</select>
+
+	<br />
+	<br />
+
+	<label>Gender</label> <br />
+	<input type="radio" value="male" id="male" name="gender" > <label for="male">Male</label> <br />
+	
+	<input type="radio" value="female" id="female" name="gender" checked> <label for="female">Female</label><br />
+	
+	<input type="radio" value="other" id="other" name="gender"> <label for="other">Other</label><br />
+
+	<br />
+	<br />
+
+	<label>Hobbies</label> <br />
+	<input type="checkbox" value="dancing" id="dancing"><label for="dancing">Dancing</label> <br />
+	<input type="checkbox" value="singing" id="singing"><label for="singing"> Singing</label> <br />
+	<input type="checkbox" value="travelling" id="travelling"><label for="travelling"></label>Travelling <br />
+
+	<br />
+
+	<input type="file" />
+
+	<br />
+	<br />
+
+	<input type="submit" value="SUBMIT" />
+	<input type="reset" value="RESET" />
+
+</form>
+</body>
+</html>

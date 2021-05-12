@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	var age = [18, 5, 19, 6, 99];
+	//Closure
+	var ageEligibleToVote = age
+		.filter(function (value){
+			return value >= 18;
+		});
+
+	console.log(ageEligibleToVote);
+
+	for(var i=0; i < age.length ; i++)
+	{
+		console.log(age[i]);
+	}
+
+	age.forEach(function  (a) {
+		console.log(a);
+	});
+
+
+
+</script>
+</body>
+</html>
